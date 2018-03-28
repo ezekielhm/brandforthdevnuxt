@@ -1,35 +1,23 @@
 <template>
-  <section class="container IndexBackground">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        brandforthdev
-      </h1>
-      <h2 class="subtitle">
-        front website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<testmenu/>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+ import testmenu from '../components/testmenu.vue'
 
-export default {
-  components: {
-    AppLogo
+ export default {
+    components: {
+      testmenu
+    },
+    data: () => ({
+      items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
+    })
   }
-}
 </script>
 
 <style>
@@ -47,7 +35,7 @@ export default {
   font-weight: 300;
   font-size: 100px;
   /*color: #35495e;*/
-  color: white;
+  color: white;z
   letter-spacing: 1px;
 }
 
